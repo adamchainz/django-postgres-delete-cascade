@@ -3,7 +3,7 @@ PostgreSQL engine for Django that supports "ON DELETE CASCADE" at the database l
 
 This is a temporary workaround until `Django's ticket #21961
 <https://code.djangoproject.com/ticket/21961>`_ is fixed. It has been tested
-with Python 2.7, Django 1.6 and Psycopg2 2.6, but should work with other
+with Python 2.7, Django 1.9 and Psycopg2 2.6, but should work with other
 combinations.
 
 To use it, you just have to:
@@ -14,7 +14,7 @@ To use it, you just have to:
 
         pip install django-postgres-delete-cascade
 
-#. Replace the ``django.db.backends.postgresql_psycopg2`` engine with
+#. Replace the ``django.db.backends.postgresql`` engine with
    ``django_postgres_delete_cascade``. For example:
 
     .. code-block:: python

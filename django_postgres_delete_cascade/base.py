@@ -14,7 +14,7 @@
 #
 ##############################################################################
 
-from django.db.backends.postgresql_psycopg2.base import \
+from django.db.backends.postgresql.base import \
     DatabaseWrapper as PostgresDatabaseWrapper
 
 from django_postgres_delete_cascade.schema import DatabaseSchemaEditor
